@@ -1,0 +1,128 @@
+package com.example.bangunruang;
+
+import android.content.Intent;
+import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.example.bangunruang.R.layout.activity_bangun_datar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+
+public class BangunDatar extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    BangunDatarAdapter adapter;
+    List<BangunDatarItem> bangunDatarList;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(activity_bangun_datar);
+
+        bangunDatarList = new ArrayList<>();
+
+        recyclerView = findViewById(R.id.recyclerView);
+//        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+
+
+        bangunDatarList.add(new BangunDatarItem(
+                "Persegi",
+                "Persegi adalah bangun datar yang dibangun dengan 4 sisi yang sama panjang. Sudut pada tiap titik selalu 90 derajat.",
+                R.drawable.persegi,
+                R.drawable.white_persegi,
+                "4 x s",
+                "s x s",
+                R.drawable.rumus_persegi
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Persegi Panjang",
+                "Persegi panjang adalah bangun datar dengan 4 sisi yang tiap sisi memiliki sepasang sisi yang sama panjang yaitu panjang (p) dan lebar (l) yang posisinya sejajar.",
+                R.drawable.persegipanjang,
+                R.drawable.white_persegipanjang,
+                "2 x (p + l)",
+                "p x l",
+                R.drawable.rumus_persegipanjang
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Lingkaran",
+                "Lingkaran adalah bangun datar yang hanya memiliki satu sisi yang melingkar dan bidang tengah dapat dihitung dengan jari-jari lingkaran atau diameter.",
+                R.drawable.lingkaran,
+                R.drawable.white_lingkaran,
+                "2 x phi x r",
+                "phi x r x r",
+                R.drawable.rumus_lingkaran
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Segitiga Sama Sisi",
+                "Segitiga sama sisi adalah bangun datar yang memiliki 3 sisi yang sama panjang dan tiap titik sudut selalu membentuk 60 derajat.",
+                R.drawable.segitigasamasisi,
+                R.drawable.white_segitigasamasisi,
+                "3 x s",
+                "s x t / 2",
+                R.drawable.rumus_segitigasamasisi
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Segitiga Sama Kaki",
+                "Segitiga sama kaki adalah bangun datar dengan 3 sisi yang 2 sisinya sama panjang dan 1 sisi berbeda yang menjadi alas segitiga.",
+                R.drawable.segitigasamakaki,
+                R.drawable.white_segitigasamakaki,
+                "2 x s + a",
+                "(a x t) / 2",
+                R.drawable.rumus_segitigasamakaki
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+           "Segitiga Siku Siku",
+                "Segitiga siku siku merupakan bangun datar yang pasti memiliki satu buah sudut siku siku atau 90 derajat dengan panjang sisi yang tidak teratur.",
+                R.drawable.segitigasikusiku,
+                R.drawable.white_segitigasikusiku,
+                "s1 + s2 + s3",
+                "(a x t) / 2",
+                R.drawable.rumus_segitigasikusiku
+               ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Belah Ketupat",
+                "Belah ketupat merupakan bangun datar yang memiliki 4 sisi yang sama panjang, tetapi sudut pada tiap titik tidak 90 derajat.",
+                R.drawable.belahketupat,
+                R.drawable.white_belahketupat,
+                "4 x s",
+                "(d1 x d2) / 2",
+                R.drawable.rumus_belahketupat
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Layang Layang",
+                "Layang layang adalah bangun datar dengan 2 pasang sisi yang sama panjang yaitu 2 sisi pendek dan 2 sisi panjang.",
+                R.drawable.layanglayang,
+                R.drawable.white_layanglayang,
+                "2 x (a + b)",
+                "(d1 x d2) / 2",
+                R.drawable.rumus_layanglayang
+        ));
+        bangunDatarList.add(new BangunDatarItem(
+                "Trapesium",
+                "Trapesium adalah bangun datar yang memiliki sepasang sisi sejajar dan sisi lainnya menghubungkan sisi sejajar.",
+                R.drawable.trapesium,
+                R.drawable.white_trapesium,
+                "s1 + s2 + a + b",
+                "{(a + b) x t} / 2",
+                R.drawable.rumus_trapesium
+        ));
+
+
+        adapter = new BangunDatarAdapter(this, bangunDatarList);
+        recyclerView.setAdapter(adapter);
+
+        FloatingActionButton fab = findViewById(R.id.fabBack);
+        fab.setOnClickListener(view -> {
+            Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent2);
+        });
+    }
+}

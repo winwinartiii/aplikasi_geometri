@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Geometri</string>
+    <string name="desc_main" translatable="false">Geometri merupakan cabang ilmu matematika yang mempelajari tentang hubungan antara titik-titik, garis-garis, bidang-bidang seperti bangun datar dan bangun ruang.</string>
+    <string name="desc_bangun_datar" translatable="false">Terdapat 9 jenis bangun datar pada aplikasi ini. Pilihlah bangun datar dibawah ini untuk membaca teori dan rumusnya serta kalkulator penghitung.</string>
+    <string name="desc_bangun_ruang" translatable="false">Pada aplikasi ini, terdapat 8 pilihan bangun ruang. Pilih diantara bangun ruang berikut untuk membaca teori dan rumusnya serta kalkulator penghitung</string>
+    <string name="desc_about" translatable="false">Aplikasi Belajar Geometri dikembangkan oleh sekelompok mahasiswa dari kelas B matakuliah Pemrograman Mobile jurusan Teknologi Informasi Universitas Udayana 2018.</string>
+    <string name="tentang_aplikasi" translatable="false">Tentang Aplikasi</string>
+    <string name="aplikasi_geometri_matematika_dibuat_untuk_membantu_perhitungan_bangun_ruang_dan_bangun_datar_dan_memenuhi_penyusunan_skripsi_teknik_informatika_universitas_pelita_bangsa" translatable="false">Aplikasi Geometri Matematika dibuat untuk membantu perhitungan bangun ruang dan bangun datar, dan memenuhi penyusunan Skripsi Teknik Informatika Universitas Pelita Bangsa</string>
+    <string name="wiwin_winarti_311710465" translatable="false">Wiwin Winarti 311710465</string>
+    <string name="ti_17_c1" translatable="false">TI.17.C1</string>
+    <string name="kalkulator_belah_ketupat" translatable="false">Kalkulator Belah Ketupat</string>
+    <string name="diagonal_1" translatable="false">Diagonal 1</string>
+    <string name="masukkan_panjang_diagonal_1" translatable="false">Masukkan panjang diagonal 1</string>
+    <string name="diagonal_2" translatable="false">Diagonal 2</string>
+    <string name="masukkan_panjang_diagonal_2" translatable="false">Masukkan panjang diagonal 2</string>
+    <string name="sisi" translatable="false">Sisi</string>
+    <string name="masukkan_panjang_sisi" translatable="false">Masukkan panjang sisi</string>
+    <string name="hitung_keliling" translatable="false">Hitung Keliling</string>
+    <string name="hitung_luas" translatable="false">Hitung Luas</string>
+    <string name="keliling" translatable="false">Keliling</string>
+    <string name="titikdua" tools:ignore="DuplicateDefinition">:</string>
+    <string name="luas">Luas</string>
+    <string name="bangun_datar">Bangun Datar</string>
+    <string name="bangun_ruang">Bangun Ruang</string>
+    <string name="back">back</string>
+
+
+</resources>

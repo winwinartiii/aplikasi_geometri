@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695283677856",
+    "project_id": "geometri-4a42e",
+    "storage_bucket": "geometri-4a42e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695283677856:android:221bd5229f3323325227c5",
+        "android_client_info": {
+          "package_name": "com.example.bangunruang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695283677856-l63euksg1nq26scpc78kv1nnhov5a2s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQSJfgECqSCo_xjwGSj5OyWFndB5h0mrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695283677856-l63euksg1nq26scpc78kv1nnhov5a2s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

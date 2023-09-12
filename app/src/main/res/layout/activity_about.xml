@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_aplikasi"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="@string/aplikasi_geometri_matematika_dibuat_untuk_membantu_perhitungan_bangun_ruang_dan_bangun_datar_dan_memenuhi_penyusunan_skripsi_teknik_informatika_universitas_pelita_bangsa"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            cardview:cardCornerRadius="4dp"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconwiwin"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:padding="20dp"
+                    android:background="#ddd"
+                    android:src="@drawable/wiwin"/>
+
+                <TextView
+                    android:id="@+id/textwiwin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/iconwiwin"
+                    android:layout_toRightOf="@+id/iconwiwin"
+                    android:fontFamily="cursive"
+                    android:text="Wiwin Winarti (311710465)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textwiwin"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/iconwiwin"
+                    android:layout_toRightOf="@+id/iconwiwin"
+                    android:fontFamily="cursive"
+                    android:text="@string/ti_17_c1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
